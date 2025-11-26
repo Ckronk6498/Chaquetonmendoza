@@ -1,0 +1,290 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfumes Exclusivos – Colección Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      color: #eaeaea;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #111;
+      padding: 20px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.6em;
+      color: #d9b27c;
+      letter-spacing: 1px;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #eaeaea;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #d9b27c;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 100px 20px;
+      background: url('https://images.unsplash.com/photo-1587831990711-23ca6441447d?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      background-blend-mode: darken;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h2, .hero p, .hero button {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h2 {
+      font-size: 3.2em;
+      color: #fff;
+      margin: 0 0 20px;
+    }
+    .hero p {
+      font-size: 1.25em;
+      color: #ccc;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+    .hero button {
+      background: #d9b27c;
+      color: #0a0a0a;
+      border: none;
+      padding: 16px 40px;
+      font-size: 1.1em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .hero button:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h3 {
+      font-size: 2.4em;
+      color: #d9b27c;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+    }
+    .card {
+      background: #1f1f27;
+      border-radius: 16px;
+      width: 300px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-14px);
+      box-shadow: 0 8px 30px rgba(217,178,124,0.5);
+    }
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .card:hover img {
+      transform: scale(1.05);
+    }
+    .card h4 {
+      margin: 15px 0 5px 0;
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    .card a {
+      display: block;
+      margin: 0 auto 20px;
+      text-decoration: none;
+      color: #d9b27c;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+    .card a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9em;
+      color: #777;
+    }
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2.4em; }
+      .card { width: 90%; }
+    }
+    audio#bgMusic {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" loop autoplay muted></audio>
+
+  <header>
+    <h1>Perfumes Exclusivos – Colección Premium</h1>
+    <nav>
+      <a href="#invictus">Invictus</a>
+      <a href="#212">212</a>
+      <a href="#badboy">Bad Boy</a>
+      <a href="https://www.fragrantica.com" target="_blank">Fragrantica</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>La elegancia del aroma, elevada.</h2>
+    <p>Explora las colecciones más icónicas de perfumería masculina con estilo refinado. Desde Paco Rabanne hasta Carolina Herrera, descubre tu firma olfativa perfecta.</p>
+    <button onclick="window.open('https://www.fragrantica.com','_blank')">Visitar Fragrantica</button>
+  </section>
+
+  <!-- INVICTUS -->
+  <section id="invictus" class="section">
+    <h3>Línea Invictus – Paco Rabanne</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://fimgs.net/mdimg/perfume/375x500.18471.jpg" alt="Invictus Eau de Toilette">
+        <h4>Invictus Eau de Toilette</h4>
+        <a href="https://www.fragrantica.com/perfume/Rabanne/Invictus-18471.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="https://fimgs.net/mdimg/perfume/375x500.65177.jpg" alt="Invictus Victory">
+        <h4>Invictus Victory</h4>
+        <a href="https://www.fragrantica.com/perfume/Rabanne/Invictus-Victory-65177.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.78575.avif" alt="Invictus Victory Elixir">
+        <h4>Invictus Victory Elixir</h4>
+        <a href="https://www.fragrantica.es/perfume/Rabanne/Invictus-Victory-Elixir-78575.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.54323.avif" alt="Invictus Legend">
+        <h4>Invictus Legend</h4>
+        <a href="https://www.fragrantica.es/perfume/Rabanne/Invictus-Legend-54323.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.34506.avif" alt="Invictus Aqua">
+        <h4>Invictus Aqua</h4>
+        <a href="https://www.fragrantica.es/perfume/Rabanne/Invictus-Aqua-34506.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.90433.avif" alt="Invictus Parfum">
+        <h4>Invictus Parfum</h4>
+        <a href="https://www.fragrantica.es/perfume/Rabanne/Invictus-Parfum-90433.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.58872.avif" alt="Invictus Onyx Collector">
+        <h4>Invictus Onyx Collector</h4>
+        <a href="https://www.fragrantica.es/perfume/Rabanne/Invictus-Onyx-Collector-Edition-58872.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 212 -->
+  <section id="212" class="section">
+    <h3>Línea 212 – Carolina Herrera</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://fimgs.net/mdimg/perfume/375x500.297.jpg" alt="212 Men">
+        <h4>212 Men</h4>
+        <a href="https://www.fragrantica.com/perfume/Carolina-Herrera/212-Men-297.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="https://fimgs.net/mdimg/perfume/375x500.12865.jpg" alt="212 VIP Men">
+        <h4>212 VIP Men</h4>
+        <a href="https://www.fragrantica.com/perfume/Carolina-Herrera/212-VIP-Men-12865.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.46093.avif" alt="212 VIP Black">
+        <h4>212 VIP Black</h4>
+        <a href="https://www.fragrantica.es/perfume/Carolina-Herrera/212-VIP-Black-46093.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.65988.avif" alt="212 Heroes">
+        <h4>212 Heroes</h4>
+        <a href="https://www.fragrantica.es/perfume/Carolina-Herrera/212-Heroes-65988.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.101559.avif" alt="212 VIP Black Elixir">
+        <h4>212 VIP Black Elixir</h4>
+        <a href="https://www.fragrantica.es/perfume/Carolina-Herrera/212-VIP-Black-Elixir-101559.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAD BOY -->
+  <section id="badboy" class="section">
+    <h3>Línea Bad Boy – Carolina Herrera</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="375x500.55449.avif" alt="Bad Boy EDT">
+        <h4>Bad Boy Eau de Toilette</h4>
+        <a href="https://www.fragrantica.es/perfume/Carolina-Herrera/Bad-Boy-55449.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.65718.avif" alt="Bad Boy Le Parfum">
+        <h4>Bad Boy Le Parfum</h4>
+        <a href="https://www.fragrantica.es/perfume/Carolina-Herrera/Bad-Boy-Le-Parfum-65718.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.71888.avif" alt="Bad Boy Cobalt">
+        <h4>Bad Boy Cobalt</h4>
+        <a href="https://www.fragrantica.es/perfume/Carolina-Herrera/Bad-Boy-Cobalt-Parfum-Electrique-71888.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.78562.avif" alt="Bad Boy Extreme">
+        <h4>Bad Boy Extreme</h4>
+        <a href="https://www.fragrantica.es/perfume/Carolina-Herrera/Bad-Boy-Extreme-78562.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+      <div class="card">
+        <img src="375x500.84050.avif" alt="Bad Boy Dazzling Garden">
+        <h4>Bad Boy Dazzling Garden</h4>
+        <a href="https://www.fragrantica.es/perfume/Carolina-Herrera/Bad-Boy-Dazzling-Garden-84050.html" target="_blank">Ver en Fragrantica</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Perfumes Exclusivos | Diseñado por <strong>SKARZZ</strong>
+  </footer>
+
+</body>
+</html>
